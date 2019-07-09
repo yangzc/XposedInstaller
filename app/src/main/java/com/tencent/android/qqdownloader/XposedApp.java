@@ -94,7 +94,7 @@ public class XposedApp extends Application implements ActivityLifecycleCallbacks
         installIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         Uri uri;
         if (Build.VERSION.SDK_INT >= 24) {
-            uri = FileProvider.getUriForFile(context, "de.robv.android.installer.fileprovider", new File(info.localFilename));
+            uri = FileProvider.getUriForFile(context, "com.tencent.android.qqdownloader.fileprovider", new File(info.localFilename));
             installIntent.setFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
         } else {
             uri = Uri.fromFile(new File(info.localFilename));

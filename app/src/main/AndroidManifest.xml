@@ -32,7 +32,7 @@
             android:exported="true"
             android:theme="@style/Theme.XposedInstaller.Transparent">
             <intent-filter>
-                <action android:name="de.robv.android.xposed.installer.DOWNLOAD_DETAILS"/>
+                <action android:name="com.tencent.android.qqdownloader.DOWNLOAD_DETAILS"/>
 
                 <data android:scheme="package"/>
 
