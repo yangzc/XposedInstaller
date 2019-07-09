@@ -1,0 +1,4 @@
+2019-7-9 cuihz
+1、改包名
+2、修改XposedApp的BASE_DIR_LEGACY和BASE_DIR
+3、改app_name
