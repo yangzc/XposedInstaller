@@ -74,12 +74,12 @@ public final class InstallZipUtil {
         }
 
 
-        ZipEntry xposedPropEntry = zip.getEntry("system/xposed.prop");
+        ZipEntry xposedPropEntry = zip.getEntry("system/xp.prop");
         if (xposedPropEntry != null) {
             try {
                 result.mXposedProp = parseXposedProp(zip.getInputStream(xposedPropEntry));
             } catch (IOException e) {
-                Log.e(XposedApp.TAG, "Failed to read system/xposed.prop from " + zip.getName(), e);
+                Log.e(XposedApp.TAG, "Failed to read system/xp.prop from " + zip.getName(), e);
             }
         }
 

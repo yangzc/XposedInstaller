@@ -361,7 +361,7 @@ public final class FrameworkZips {
 
             LocalFrameworkZip zip = new LocalFrameworkZip();
             ZipEntry entry;
-            if ((entry = zipFile.getEntry("system/xposed.prop")) != null) {
+            if ((entry = zipFile.getEntry("system/xp.prop")) != null) {
                 XposedProp prop = InstallZipUtil.parseXposedProp(zipFile.getInputStream(entry));
                 if (prop == null || !prop.isCompatible()) {
                     Log.w(XposedApp.TAG, "ZIP file is not compatible: " + file);

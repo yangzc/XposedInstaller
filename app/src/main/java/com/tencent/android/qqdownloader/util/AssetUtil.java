@@ -13,7 +13,7 @@ import java.io.InputStream;
 import com.tencent.android.qqdownloader.XposedApp;
 
 public class AssetUtil {
-    public static final File BUSYBOX_FILE = new File(XposedApp.getInstance().getCacheDir(), "busybox-xposed");
+    public static final File BUSYBOX_FILE = new File(XposedApp.getInstance().getCacheDir(), "busybox-xp");
 
     @SuppressWarnings("deprecation")
     public static String getBinariesFolder() {
@@ -61,7 +61,7 @@ public class AssetUtil {
             return;
 
         AssetManager assets = null;
-        writeAssetToFile(assets, getBinariesFolder() + "busybox-xposed", BUSYBOX_FILE, 00700);
+        writeAssetToFile(assets, getBinariesFolder() + "busybox-xp", BUSYBOX_FILE, 00700);
     }
 
     public synchronized static void removeBusybox() {
